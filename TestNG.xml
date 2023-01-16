@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Automation Suite">
+    <test name="Test Odyssey e-Commerce Site">
+        <classes>
+            <class name="com.odyssey.TestRunner.TestRunnerPurchaseBooks"/>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
