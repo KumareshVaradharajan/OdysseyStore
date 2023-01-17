@@ -37,6 +37,8 @@ public class BooksPurchaseStepDef {
 
     @After
     public void afterScenario() {
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(7));
         driver.get("https://odyssey.in/");
     }
 
