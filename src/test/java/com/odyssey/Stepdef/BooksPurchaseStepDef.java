@@ -111,11 +111,13 @@ public class BooksPurchaseStepDef {
     @And("Sort the books with descending order")
     public void sortTheBooksWithDescendingOrder() {
 
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
         booksListPage.clickSortByFilterButton();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
         booksListPage.clickAlphabeticallyZtoAOptionInSortingFilter();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 
     }
 
