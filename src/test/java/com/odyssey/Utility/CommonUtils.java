@@ -18,7 +18,7 @@ public class CommonUtils {
         Thread.sleep(5000);
 
         File screenshotFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(screenshotFile, new File("C:\\Users\\Kumaresh\\Downloads\\Personalization\\src\\test\\resources\\TestOutputs\\Screenshot_"+System.currentTimeMillis()+".png"));
+        FileUtils.copyFile(screenshotFile, new File("C:\\Users\\Kumaresh\\Downloads\\Personalization\\test-output\\Screenshots\\Screenshot_"+System.currentTimeMillis()+".png"));
 
     }
 }
