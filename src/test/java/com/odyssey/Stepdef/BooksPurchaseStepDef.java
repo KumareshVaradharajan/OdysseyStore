@@ -49,7 +49,7 @@ public class BooksPurchaseStepDef {
             LOGGER.debug("Browser Started...");
 
             // Set the path of the ChromeDriver executable
-            System.setProperty("webdriver.chrome.driver", "C:\\Users\\Kumaresh\\Downloads\\Personalization\\src\\main\\resources\\Drivers\\chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\Drivers\\chromedriver.exe");
 
             // Create a new ChromeDriver
             driver = new ChromeDriver();
