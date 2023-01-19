@@ -55,7 +55,8 @@ public class BooksPurchaseStepDef {
             driver = new ChromeDriver();
         }
         driver.manage().window().maximize();
-        LOGGER.info("Browser Maximized...");
+
+        LOGGER.info("Browser Maximized....");
 
 
     }
