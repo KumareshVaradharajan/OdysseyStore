@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-01-18T18:09:54 IST" name="Automation Suite" finished-at="2023-01-18T18:10:12 IST" duration-ms="17502">
+  <suite started-at="2023-01-18T18:11:00 IST" name="Automation Suite" finished-at="2023-01-18T18:11:37 IST" duration-ms="36613">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@79c7532f]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@17aad511]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-01-18T18:09:54 IST" name="Test Odyssey e-Commerce Site" finished-at="2023-01-18T18:10:12 IST" duration-ms="17502">
+    <test started-at="2023-01-18T18:11:00 IST" name="Test Odyssey e-Commerce Site" finished-at="2023-01-18T18:11:37 IST" duration-ms="36613">
       <class name="com.odyssey.TestRunner.TestRunnerPurchaseBooks">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@79c7532f]" started-at="2023-01-18T18:09:54 IST" name="setup" finished-at="2023-01-18T18:09:54 IST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@17aad511]" started-at="2023-01-18T18:11:00 IST" name="setup" finished-at="2023-01-18T18:11:00 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@79c7532f]" started-at="2023-01-18T18:09:54 IST" name="setUp" finished-at="2023-01-18T18:09:59 IST" duration-ms="4900" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@17aad511]" started-at="2023-01-18T18:11:00 IST" name="setUp" finished-at="2023-01-18T18:11:04 IST" duration-ms="3824" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@79c7532f]" started-at="2023-01-18T18:09:59 IST" name="setUpClass" finished-at="2023-01-18T18:10:00 IST" duration-ms="540" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@17aad511]" started-at="2023-01-18T18:11:04 IST" name="setUpClass" finished-at="2023-01-18T18:11:04 IST" duration-ms="483" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@6fbc7853]]>
+                <![CDATA[org.testng.TestRunner@990b86b]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@79c7532f]" started-at="2023-01-18T18:10:00 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-18T18:10:02 IST" duration-ms="2471" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@17aad511]" started-at="2023-01-18T18:11:04 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-18T18:11:07 IST" duration-ms="2269" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,7 +45,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@79c7532f]" started-at="2023-01-18T18:10:02 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-18T18:10:10 IST" duration-ms="7896" status="FAIL">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@17aad511]" started-at="2023-01-18T18:11:07 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-01-18T18:11:34 IST" duration-ms="27606" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -58,61 +58,14 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div[1]/section/div[1]/div[2]/div[2]/div/div/div/div[3]/div[1]/div[2]/div/a"}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b21c896117baa74edaa3c529eec6b502, findElement {using=xpath, value=/html/body/main/div[1]/section/div[1]/div[2]/div[2]/div/div/div/div[3]/div[1]/div[2]/div/a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Kumaresh\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63057}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63057/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b21c896117baa74edaa3c529eec6b502]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/main/div[1]/section/div[1]/div[2]/div[2]/div/div/div/div[3]/div[1]/div[2]/div/a"}
-  (Session info: chrome=109.0.5414.75)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [b21c896117baa74edaa3c529eec6b502, findElement {using=xpath, value=/html/body/main/div[1]/section/div[1]/div[2]/div[2]/div/div/div/div[3]/div[1]/div[2]/div/a}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 109.0.5414.75, chrome: {chromedriverVersion: 109.0.5414.74 (e7c5703604da..., userDataDir: C:\Users\Kumaresh\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63057}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63057/devtoo..., se:cdpVersion: 109.0.5414.75, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b21c896117baa74edaa3c529eec6b502
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-at jdk.proxy2/jdk.proxy2.$Proxy43.getText(Unknown Source)
-at com.odyssey.PageObjects.BooksListPage.getFirstBookName(BooksListPage.java:59)
-at com.odyssey.Stepdef.BooksPurchaseStepDef.addTheBookToCart(BooksPurchaseStepDef.java:141)
-at ✽.Add the "ZERO TO ONE" Book to Cart(file:///C:/Users/Kumaresh/Downloads/Personalization/src/test/java/com/odyssey/Features/PurchaseBooks.feature:28)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@79c7532f]" started-at="2023-01-18T18:10:10 IST" name="tearDownClass" finished-at="2023-01-18T18:10:11 IST" duration-ms="1087" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@17aad511]" started-at="2023-01-18T18:11:34 IST" name="tearDownClass" finished-at="2023-01-18T18:11:36 IST" duration-ms="1479" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@79c7532f]" started-at="2023-01-18T18:10:11 IST" name="tearDown" finished-at="2023-01-18T18:10:12 IST" duration-ms="577" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.odyssey.TestRunner.TestRunnerPurchaseBooks@17aad511]" started-at="2023-01-18T18:11:36 IST" name="tearDown" finished-at="2023-01-18T18:11:37 IST" duration-ms="922" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

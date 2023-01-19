@@ -16,8 +16,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
+        <sonar.organization>kumareshvaradharajan</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/junit/junit -->
         <dependency>
@@ -97,6 +98,7 @@
             <scope>provided</scope>
         </dependency>
 
+
     </dependencies>
 
 
@@ -117,10 +119,6 @@
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.8.0</version>
                 </plugin>
-<!--                <plugin>-->
-<!--                    <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                    <version>3.0.0-M8</version>-->
-<!--                </plugin>-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-surefire-plugin</artifactId>

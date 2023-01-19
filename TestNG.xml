@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Automation Suite">
     <listeners>
-        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+        <listener class-name="org.testng.reporters.XMLReporter"/>
     </listeners>
     <test name="Test Odyssey e-Commerce Site">
         <classes>
