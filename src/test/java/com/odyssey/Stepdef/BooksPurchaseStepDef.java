@@ -11,6 +11,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -44,16 +47,29 @@ public class BooksPurchaseStepDef {
 
     public void launchBrowser(String browserName) {
 
+        System.out.println("Browser name : " + browserName);
+
         if (browserName.equalsIgnoreCase("Chrome")) {
 
-            LOGGER.debug("Browser Started...");
+            LOGGER.debug("Chrome Browser Started...");
 
             // Set the path of the ChromeDriver executable
-            System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "src/main/resources/Drivers/chrome/chromedriver.exe");
 
             // Create a new ChromeDriver
             driver = new ChromeDriver();
+        } else if (browserName.equalsIgnoreCase("Firefox")) {
+
+            System.out.println("Mozilla Firefox Browser Started...");
+
+            // Set the path of the FirefoxDriver
+            System.setProperty("webdriver.firefox.marionette", "src/main/resources/Drivers/firefox/geckodriver.exe");
+
+            driver = new FirefoxDriver();
+
         }
+
+
         driver.manage().window().maximize();
 
         LOGGER.info("Browser Maximized....");
@@ -74,11 +90,16 @@ public class BooksPurchaseStepDef {
     @Then("I am on the {string}")
     public void IAmOnThe(String pageName) {
 
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
         if (pageName.equalsIgnoreCase("Home Page")) {
             Assert.assertTrue(driver.getPageSource().contains("Discover our products"));
         } else if (pageName.equalsIgnoreCase("My Cart page")) {
+            System.out.println("The text 'My cart' was found on the page.");
             Assert.assertTrue(driver.getPageSource().contains("My cart"), "The text 'My cart' was not found on the page.");
         }
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
 
@@ -132,6 +153,9 @@ public class BooksPurchaseStepDef {
         String firstBookName = booksListPage.getFirstBookName();
         System.out.println("FirstBookName : " + firstBookName);
 
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+
     }
 
     @And("Add the {string} Book to Cart")
@@ -155,14 +179,19 @@ public class BooksPurchaseStepDef {
 
         }
 
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
     }
 
     @And("Checkout and Add contact information")
     public void checkoutAndAddContactInformation() {
+        System.out.println("Going to click My cart button");
+
         myCartPage = new MyCartPage(driver);
         shipmentPage = new ShipmentPage(driver);
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+
 
         myCartPage.clickCheckOutBtn();
 
@@ -173,9 +202,12 @@ public class BooksPurchaseStepDef {
         shipmentPage.enterLastName("Kumar");
         shipmentPage.enterAddress("No-1, 6th Street");
         shipmentPage.enterCityName("Chennai");
-        shipmentPage.enterPinCode("600100");
+        shipmentPage.enterPinCode("600107");
         shipmentPage.enterPhNo("8925402644");
         shipmentPage.selectStateName("Tamil Nadu");
+
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+
         shipmentPage.clickContinueToShopBtn();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
