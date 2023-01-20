@@ -14,7 +14,7 @@ public class MyCartPage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//button[@class='cart-recap__checkout button button--primary button--full button--large']")
+    @FindBy(css = "button[class='cart-recap__checkout button button--primary button--full button--large']")
     WebElement checkoutBtn;
 
     public void clickCheckOutBtn(){

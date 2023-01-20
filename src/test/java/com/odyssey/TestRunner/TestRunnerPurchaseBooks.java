@@ -8,6 +8,7 @@ import org.apache.logging.log4j.core.config.Configurator;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 
 
 @CucumberOptions(features = "src/test/java/com/odyssey/Features/PurchaseBooks.feature",
@@ -28,10 +29,11 @@ public class TestRunnerPurchaseBooks extends AbstractTestNGCucumberTests {
         Configurator.initialize(null, "src/test/resources/log4j2.properties");
     }
 
+    @Parameters({"browser"})
     @BeforeTest
-    public void setUp() {
+    public void setUp(String browserName) {
 
-        booksPurchaseStepDef.launchBrowser("Chrome");
+        booksPurchaseStepDef.launchBrowser(browserName);
         booksPurchaseStepDef.navigateToUrl("https://odyssey.in/");
     }
 

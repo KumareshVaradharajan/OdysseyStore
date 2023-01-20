@@ -1,10 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Automation Suite">
+<suite name="Test Automation Suite">
     <listeners>
         <listener class-name="org.testng.reporters.XMLReporter"/>
     </listeners>
-    <test name="Test Odyssey e-Commerce Site">
+    <test name="Test 1 : Odyssey e-Commerce Site in Firefox browser">
+        <parameter name="browser" value="Firefox"/>
+        <classes>
+            <class name="com.odyssey.TestRunner.TestRunnerPurchaseBooks"/>
+        </classes>
+    </test> <!-- Test -->
+    <test name="Test 2 : Odyssey e-Commerce Site in Chrome browser">
+        <parameter name="browser" value="Chrome"/>
         <classes>
             <class name="com.odyssey.TestRunner.TestRunnerPurchaseBooks"/>
         </classes>
